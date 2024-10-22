@@ -119,10 +119,7 @@ app.post('/api/addnews', async (req, res) => {
     const { title, category, content, imageUrl } = req.body;
 
     // Check if all required fields are provided
-    if (!title || !category || !content) {
-        return res.status(400).json({ error: 'Title, category, and content are required' });
-    }
-
+  
     try {
         const newNewsPost = new AddNews({
             title,

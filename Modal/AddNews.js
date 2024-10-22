@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 const blogPostSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true,
+        required: false,
     },
     category: {
         type: String,
-        required: true,
+        required: false,
     },
     content: {
         type: String,
-        required: true,
+        required: false,
     },
     imageUrl: {
         type: String,
